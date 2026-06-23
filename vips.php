@@ -1,30 +1,38 @@
-<?php include_once '/home/joshch9/project/frontInclude.php' ?>
+<?php
+include_once __DIR__.'/../project/frontInclude.php';
+
+use XCOMDatabank\Front\VIPPage;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php include_once '/home/joshch9/xcom-databank/php/ga.php' ?>
-		<?php include_once '/home/joshch9/xcom-databank/php/header-include.php' ?>
+		<?php include_once __DIR__.'/php/ga.php' ?>
+		<?php include_once __DIR__.'/php/header-include.php' ?>
 	</head>
 	<body>
 		<div id="main">
 			<div id="page-top">
-				<?php include_once '/home/joshch9/xcom-databank/php/page-head.php' ?>
-				<?php include_once '/home/joshch9/xcom-databank/php/page-nav.php' ?>
+				<?php include_once __DIR__.'/php/page-head.php' ?>
+				<?php include_once __DIR__.'/php/page-nav.php' ?>
 			</div>
 			<div class="container">
-				<h2>XCOM VIPs</h2>
-				<div class="row gear-row">
+				<div class="card page-head vip-list-head">
+					<div class="card-header bg-success text-white">XCOM VIPs</div>
+				</div>
+				<div class="row vip-main-row">
 				<?php
-					getVIPs('Engineer');
-					getVIPs('Scientist');
-					getVIPs('Dark VIP');
+                    $engineerVIP = new VIPPage('Engineer');
+                    $scientistVIP = new VIPPage('Scientist');
+                    $darkVIP = new VIPPage('Dark VIP');
+                    $engineerVIP->getVIPS();
+                    $scientistVIP->getVIPS();
+                    $darkVIP->getVIPS();
 				?>
 				</div>
 			</div>
 		</div>
-	<?php include_once '/home/joshch9/xcom-databank/php/page-footer.php' ?>
-	<?php include_once '/home/joshch9/xcom-databank/php/scripts-include.php' ?>
-	<script src="/xcom/js/covert-table-sort.js"></script>
+	<?php include_once __DIR__.'/php/page-footer.php' ?>
+	<?php include_once __DIR__.'/php/scripts-include.php' ?>
 	</body>
 </html>

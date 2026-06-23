@@ -1,0 +1,506 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: url('../img/bgs/dust_scratches.png');
+}
+
+hr {
+	border-top-color: #999999;
+}
+
+/* Container Styles */
+div#container {
+	padding: 0;
+}
+
+/* Header Styles */
+header {
+	border-bottom: 2px #dddddd solid;
+	background: #ffffff;
+}
+
+#head-container {
+	width: 85%;
+	margin: auto;
+}
+
+div#head-small {
+	padding-top: 20px;
+}
+
+h1#head-main {
+	margin-top: 0;
+	color: #b91d0c;
+	background:  linear-gradient(to bottom, #e96b6b 0%, #fa2a13 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Navigation Styles */
+nav#navigation {
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul#nav-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul#nav-list li.nav-item {
+	float: left;
+	background-image: url('../img/icons/xcom-small.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin: 10px 20px;
+	padding-left: 25px;
+}
+
+ul#nav-list li.nav-item a {
+	color: #337ab7;
+}
+
+ul#nav-list li.nav-item:hover {
+	background-image: url('../img/icons/xcom-small-hover.png');
+}
+
+ul#nav-list li.nav-item:hover a {
+	color: #d72a25;
+	text-decoration: none;
+}
+
+/* Main Styles */
+div#main {
+	width: 85%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+div.flex {
+	display: flex;
+}
+
+div.mission-container {
+	background: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+h3.operation-name {
+	margin-top: 0;
+}
+
+div.mission-photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #333333;
+}
+
+p.mission-date,
+p.mission-location,
+p.objective {
+	margin: 0;
+}
+
+div.chosen-result {
+	font-size: 2em;
+	color: #990000;
+	margin: 20px;
+}
+
+div.mission-table {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	border-bottom: 1px groove #999999;
+	margin: 5px 0;
+	padding-bottom: 5px;
+}
+
+div.mission-table:first-of-type {
+	margin-top: 20px;
+}
+
+div.mission-table-head,
+div.mission-table-result {
+	padding: 0;
+}
+
+/* Table Styles */
+table.soldier-table,
+table.soldier-ops-table,
+table.mission-table,
+table.covert-table {
+	width: 100%;
+}
+
+table.tablesorter {
+	border-collapse: separate;
+	border-spacing: 0 5px;
+}
+
+table.tablesorter thead tr th {
+	border: 1px solid #FFF;
+	padding: 5px;
+}
+
+table.tablesorter thead tr .tablesorter-header {
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+table.tablesorter thead tr .tablesorter-headerUnSorted {
+	background-image: url('../img/icons/bg.gif');
+	background-color: #333333;
+}
+
+table.tablesorter thead tr .tablesorter-headerAsc {
+	background-image: url('../img/icons/asc.gif');
+	background-color: #337ab7;
+}
+
+table.tablesorter thead tr .tablesorter-headerDesc {
+	background-image: url('../img/icons/desc.gif');
+	background-color: #337ab7;
+}
+
+table.tablesorter thead tr th img {
+	width: 25px;
+	height: auto;
+}
+
+table.tablesorter tbody tr td,
+table.tablesorter tfoot tr td {
+	background-color: #ffffff;
+	padding: 5px;
+}
+
+table.tablesorter tbody tr td,
+table.tablesorter tfoot tr td {
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+
+table.tablesorter tbody tr td:first-child,
+table.tablesorter tfoot tr td:first-child {
+	border-left: 1px solid #999999;
+}
+
+table.tablesorter tbody tr td:last-child,
+table.tablesorter tfoot tr td:last-child {
+	border-right: 1px solid #999999;
+}
+
+table.tablesorter tbody tr td.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+}
+
+table.tablesorter tbody tr td.alert-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+}
+
+table.tablesorter tbody tr td.alert-info {
+	color: #31708f;
+	background-color: #d9edf7;
+}
+
+table.tablesorter tbody tr td.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+}
+
+table.tablesorter tbody tr td.alert-purple {
+	color: #89318f;
+	background-color: #f5daf7;
+}
+
+table.tablesorter tbody tr td.alert-orange {
+	color: #8f6031;
+	background-color: #f7e9da;
+}
+
+table.tablesorter tbody tr td.classicon,
+table.tablesorter tbody tr td.rankicon {
+	width: 40px;
+}
+
+table.tablesorter tbody tr td.mvp {
+	width: 60px;
+}
+
+table.tablesorter tbody tr td.name,
+table.tablesorter tbody tr td.kills,
+table.tablesorter tbody tr td.shots,
+table.tablesorter tbody tr td.overwatch {
+	white-space: nowrap;
+}
+
+table.tablesorter tbody tr td.skill {
+	text-align: center;
+	width: 50px;
+}
+
+table.tablesorter tbody tr td.skill.intelligence {
+	width: auto;
+	text-align: left;
+}
+
+
+table.stats-table td {
+	padding: 5px;
+}
+
+td.flag {
+	width: 80px;
+	min-width: 80px;
+	max-width: 80px;
+}
+
+td.flag img {
+	width: 100%;
+	border: 1px solid #333333;
+}
+
+td.rankicon img {
+	max-height: 37px;
+}
+
+td.rank {
+	max-width: 40px;
+}
+
+td.classicon img,
+td.faction-icon img {
+	max-height: 37px;
+}
+
+td.mvp img {
+	max-height: 37px;
+}
+
+td.shots,
+td.overwatch,
+td.damage,
+td.mvp,
+td.difficulty,
+td.episode {
+	text-align: center;
+}
+
+.status-box {
+	height: 40px;
+	line-height: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	float: left;
+	min-width: 200px;
+	margin-left: 10px;
+	text-align: center;
+	white-space: nowrap;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.alert-hacked {
+	color: #8f6031;
+	background-color: #f7e9da;
+	border-color: #f2d8bd;
+}
+
+.alert-mind-controlled {
+	color: #89318f;
+	background-color: #f5daf7;
+	border-color: #efbdf2;
+}
+
+/* Bond Styles */
+.bond {
+	text-align: right;
+}
+
+.bonded-soldier {
+    line-height: 64px;
+    font-size: 1.5em;
+    padding-left: 0;
+}
+
+/* Footer */
+footer {
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #337ab7;
+	color: #ffffff;
+	clear: both;
+	margin-top: 100px;
+}
+
+footer a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Soldier Page */
+div.soldier-page-rank-insignia {
+	width: 64px;
+	display: inline-block;
+}
+
+div.soldier-page-rank-label {
+	display: inline-block;
+	font-size: 2em;
+	line-height: 64px;
+	vertical-align: middle;
+}
+
+span.soldier-page-nickname {
+	font-size: 0.75em;
+}
+
+h2.soldier-page-name {
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+div.soldier-photo img {
+	width: 100%;
+	background: #ffffff;
+	/* padding: 5px;
+	border: 1px solid #666666; */
+	border-radius: 20px;
+	box-shadow: 0 0 10px #333333;
+}
+
+div.soldier-flag img {
+	max-width: 100%;
+	width: auto;
+	/* max-height: 64px; */
+	border: 1px solid #333333;
+	box-shadow: 0 0 6px #999999;
+}
+
+div.soldier-page-class-insignia {
+	width: 64px;
+	display: inline-block;
+}
+
+div.soldier-page-class-insignia img {
+	width: 100%;
+}
+
+div.soldier-page-class-label {
+	font-size: 2em;
+	line-height: 64px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+div.stats {
+	margin-top: 20px;
+}
+
+div.skill-title {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+div.skill-title-intelligence {
+	font-size: 1.5em;
+	text-align: left;
+}
+
+div.aim {
+	background-image: url('../img/icons/stats/aim.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.health{
+	background-image: url('../img/icons/stats/health.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.mobility {
+	background-image: url('../img/icons/stats/mobility.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.will {
+	background-image: url('../img/icons/stats/will.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.hack {
+	background-image: url('../img/icons/stats/hack.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.dodge {
+	background-image: url('../img/icons/stats/dodge.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.intelligence {
+	background-image: url('../img/icons/stats/intelligence.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 46px;
+	line-height: 36px;
+	font-size: 1.3em;
+}
+
+div.soldier-killed {
+	font-size: 5em;
+	color: #cc0000;
+	background-image: url('../img/icons/killed.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 100%;
+	padding-left: 100px;
+}
+
+div.skill {
+	line-height: 36px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 36px 36px;
+	padding-left: 50px;
+}

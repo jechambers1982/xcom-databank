@@ -1,0 +1,2098 @@
+body {
+	font-family: sans-serif;
+	background: url('../img/bgs/dust_scratches.png');
+}
+
+hr {
+	border-top-color: #999999;
+}
+
+a {
+	color: #337ab7;
+}
+
+a:focus,
+a:hover {
+	color: #23527c;
+}
+
+div#page-top {
+	position: fixed;
+	width: 100%;
+	top: 0;
+    left: 0;
+	z-index: 1000;
+	background: #fff;
+	border-bottom: 1px solid #333;
+}
+
+/* Navigation Styles */
+nav#navigation {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	border-top: 1px solid #cccccc;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+}
+
+ul#nav-list {
+	padding: 10px 0 0 0;
+	list-style: none none;
+}
+
+ul#nav-list li ul.display {
+	list-style-type: none;
+}
+
+ul#nav-list li ul.display li {
+	border-top: 1px solid #ccc;
+	padding: 10px 0 10px 30px;
+	text-align: left;
+}
+
+ul#nav-list li ul.display li:hover {
+	background: #337ab7;
+}
+
+ul#nav-list li ul.display li a {
+	display: block;
+}
+
+ul#nav-list li ul.display li:hover a {
+	color: #fff;
+}
+
+ul#nav-list li.nav-item {
+	float: left;
+	text-align: center;
+}
+
+ul#nav-list li.nav-item.covert a {
+	font-size: 0;
+}
+
+ul#nav-list li.nav-item.covert a span:after {
+	content: "Covert";
+	display: block;
+	font-size: 0.8rem;
+}
+
+ul#nav-list li.nav-item ul li {
+	float: none;
+}
+
+ul#nav-list li.home,
+ul#nav-list li.soldiers,
+ul#nav-list li.missions,
+ul#nav-list li.covert,
+ul#nav-list li.more {
+	width: 20%;
+}
+
+ul#nav-list li.more ul {
+	display: none;
+}
+
+ul#nav-list li.nav-item a {
+	color: #333333;
+	font-size: 0.8rem;
+}
+
+ul#nav-list li.nav-item span.mobile-icon {
+	width: 100%;
+	display: block;
+	height: 24px;
+}
+
+ul#nav-list li.nav-item span.mobile-icon img {
+	max-width: 24px;
+	max-height: 24px;
+}
+
+ul#nav-list li.more ul.display {
+	position: fixed;
+	background: #ffffff;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #cccccc;
+	padding: 0;
+}
+
+ul#nav-list li.more ul.display li.sub-nav-item {
+	line-height: 3em;
+	text-align: left;
+	border-top: 1px solid #cccccc;
+	padding: 0 5%;
+}
+
+ul#nav-list li.more ul.display,
+ul#nav-list li.more ul.display li.sub-nav-item,
+ul#nav-list li.more ul.display li.sub-nav-item a {
+	display: block;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 2em;
+	}
+	
+	/* Soldier Page */
+	div.soldier-flag span {
+		font-size: 1em;
+	}
+	
+	div.soldier-flag img {
+		display: block;
+	}
+	
+	table.soldier-ops-table .kills-col {
+		display: table-cell;
+	}
+}
+
+@media (min-width: 992px) { 
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	/* Navigation */
+	nav#navigation {
+		display: block;
+		bottom: auto;
+		border: 0;
+		position: unset;
+		overflow: unset;
+		width: 95%;
+	}
+	
+	ul#nav-list {
+		margin: 0;
+		padding: 0;
+		font-size: 0;    
+		text-align: left;
+	}
+	
+	ul#nav-list li.nav-item {
+		display: inline-block;
+		position: relative;
+		padding: 0 20px;
+		text-align: left;
+	}
+	
+	ul#nav-list li.nav-item a {
+		font-size: 1rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0 10px 25px;
+		background-image: url('../img/icons/xcom-small.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+	
+	ul#nav-list li.nav-item.covert a {
+		font-size: 1rem;
+	}
+	
+	ul#nav-list li.nav-item ul {
+		 display: none;
+         position: absolute;
+         top: 100%;
+         right: 0;
+         margin-right: 0;
+	}
+	
+	ul#nav-list li.nav-item ul li {
+		margin-top: 1px;
+	}
+	
+	ul#nav-list li.nav-item ul li a {
+        text-align: left;
+        white-space: nowrap;
+		font-size: 1rem;
+	}
+	
+	ul#nav-list li.nav-item:hover {
+		border-left: 1px solid #333;
+		border-right: 1px solid #333;
+		padding: 0 19px;
+		background: #eee;
+	}
+	
+	ul#nav-list li.nav-item.more:hover {
+	}
+
+	ul#nav-list li.nav-item:hover a {
+		color: #d72a25;
+		text-decoration: none;
+		background-image: url('../img/icons/xcom-small-hover.png');
+	}
+	
+	ul#nav-list li.nav-item:hover ul {
+		display: block;
+		background: #eee;
+		margin-top: 1px;
+		border-right: 1px solid #333;
+		border-bottom: 1px solid #333;
+		border-left: 1px solid #333;
+		padding: 0;
+		margin-right: -1px;
+	}
+	
+	ul#nav-list li.nav-item:hover ul li {
+		border: 0;
+		padding: 0 20px;
+	}
+	
+	ul#nav-list li.nav-item:hover ul li a {
+		background-image: url('../img/icons/xcom-small.png');
+	}
+	
+	ul#nav-list li.nav-item:hover ul li:hover a {
+		background-image: url('../img/icons/xcom-small-hover.png');
+	}
+	
+	ul#nav-list li.home,
+	ul#nav-list li.soldiers,
+	ul#nav-list li.missions,
+	ul#nav-list li.covert,
+	ul#nav-list li.about,
+	ul#nav-list li.season2
+	{
+		width: auto;
+		display: block;
+	}
+	
+	ul#nav-list li.more {
+		width: auto;
+	}
+
+	ul#nav-list li.more:hover ul li.nav-item ul {
+		display: none;
+	}
+
+	ul#nav-list li.nav-item span.mobile-icon {
+		display: none;
+	}
+	
+	ul#nav-list li.nav-item a {
+		color: #337ab7;
+	}
+	
+	/* Soldier Page */
+	div.soldier-flag span {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 1200px) { 
+	/* Navigation */
+	nav#navigation {
+		width: 85%;
+	}
+	
+	div.soldier-flag span {
+		font-size: 1.5em;
+	}
+}
+
+/* Container Styles */
+div#container {
+	padding: 0;
+}
+
+/* Header Styles */
+header {
+	border-bottom: 2px #dddddd solid;
+}
+
+#head-container {
+	width: 85%;
+	margin: auto;
+}
+
+div#head-small {
+	padding-top: 20px;
+	font-family: Montserrat, Ubuntu, sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+h1#head-main {
+	margin-top: 0;
+	color: #b91d0c;
+	background:  linear-gradient(to bottom, #e96b6b 0%, #fa2a13 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Montserrat, Ubuntu, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	display: inline-block;
+}
+
+div.bmc-btn-container {
+	width: 250px;
+	display: inline-block;
+	float: right;
+}
+
+div.bmc-btn-container a.bmc-btn {
+	font-size: 1.2em;
+	height: 40px;
+}
+
+/* Main Styles */
+div#main {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+}
+
+div.flex {
+	display: flex;
+}
+
+div.mission-container {
+	background: #f9f9f9;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+h3.operation-name {
+	margin-top: 0;
+}
+
+div.mission-photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #333333;
+}
+
+p.mission-date,
+p.mission-location,
+p.objective,
+p.dark-event {
+	margin: 0;
+}
+
+div.chosen-result {
+	font-size: 2em;
+	color: #990000;
+	margin: 20px;
+}
+
+div.mission-table {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	border-bottom: 1px groove #999999;
+	margin: 5px 0;
+	padding-bottom: 5px;
+}
+
+div.mission-table:first-of-type {
+	margin-top: 20px;
+}
+
+div.mission-table-head,
+div.mission-table-result {
+	padding: 0;
+}
+
+/*Mission Information */
+p.mission-date,
+p.mission-location,
+p.objective,
+p.sitrep,
+p.dark-event,
+p.mission-difficulty {
+	margin: 10px 0;
+	min-height: 32px;
+	line-height: 32px;
+}
+
+p.mission-date img,
+p.mission-location img,
+p.objective img,
+p.sitrep img,
+p.dark-event img,
+p.mission-difficulty img {
+	height: 32px;
+	margin-right: 10px;
+}
+
+div.flag img {
+	border: 1px solid #333333;
+}
+
+div.alert-purple {
+	color: #89318f;
+	background-color: #f5daf7;
+}
+
+div.border-purple {
+	border-color: #560dfd !important;
+}
+
+div.alert-orange {
+	color: #8f6031;
+	background-color: #f7e9da;
+}
+
+div.alert-warning {
+	background-color: #fff3cd;
+}
+
+div.alert-success {
+	background-color: #d4edda;
+}
+
+div.alert-secondary {
+	background-color: #ced4da;
+}
+
+div.alert-primary {
+	background-color: #d1ecf1;
+}
+
+div.alert-danger {
+	background-color: #f8d7da;
+}
+
+div.alert-mvp {
+	color: #996515;
+	background-color: #FFDF00;
+}
+
+div.alert-research {
+	background-color: #d1ecf1;
+}
+
+div.data-row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+div.data-row-title {
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+div.data-row-info {
+	padding-right: 10px;
+}
+
+.status-box {
+	height: 40px;
+	line-height: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	float: left;
+	min-width: 100px;
+	margin-left: 10px;
+	text-align: center;
+	white-space: nowrap;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.alert-hacked {
+	color: #8f6031;
+	background-color: #f7e9da;
+	border-color: #f2d8bd;
+}
+
+.alert-mind-controlled {
+	color: #89318f;
+	background-color: #f5daf7;
+	border-color: #efbdf2;
+}
+
+span.status-icon img {
+	max-height: 37px;
+}
+
+/* Bond Styles */
+.bond {
+	text-align: left;
+}
+
+.bonded-soldier {
+    font-size: 1.5em;
+    padding-left: 0;
+}
+
+/* Footer */
+footer {
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #337ab7;
+	color: #ffffff;
+	clear: both;
+	margin-top: 100px;
+}
+
+footer a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Research Page */
+div.research-lab,
+div.shadow-chamber {
+	border-style: solid;
+	border-width: 1px;
+	font-weight: bold;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+div.shadow-chamber {
+	border-color: #89318f;
+}
+
+div.research-name {
+	font-size: 1.1em;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	padding: 10px 20px;
+}
+
+div.research-detail {
+	align-items: center;
+	display: flex;
+	font-size: 1em;
+	white-space: pre;
+}
+
+div.research-detail i {
+	margin-right: 10px;
+}
+
+/* Soldier List Page */
+table.soldier-list-table {
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	width: 100%
+}
+
+table.soldier-list-table tr th {
+	background: #000000;
+	color: #ffffff;
+	padding: 10px 15px 10px 0;
+}
+
+table.soldier-list-table tr th.soldier-table-class,
+table.soldier-list-table tr th.soldier-table-rank {
+	padding: 10px
+}
+
+tr.soldier-list-row:not(.alert-danger):not(.alert-warning),
+tr.soldier-list-footer {
+	background: #ffffff;
+	border: 1px solid #000000;
+}
+
+tr.soldier-list-row td,
+tr.soldier-list-footer td {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+td.flag {
+	width: 80px;
+	border-left: 1px solid #000000;
+}
+
+td.flag img {
+	width: 100%;
+}
+
+td.class {
+	padding: 0 20px;
+	width: 75px;
+}
+
+td.class img,
+td.rank img {
+	width: 35px
+}
+
+td.rank {
+	padding-right: 10px;
+}
+
+td.name {
+	white-space: nowrap;
+}
+
+td.eas {
+	border-right: 1px solid #000000;
+}
+
+@media (max-width: 1200px) {
+	span.rank-short {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	table.soldier-list-table tr,
+	table.soldier-list-table td {
+		display: block;
+	}
+
+	table.soldier-list-table tr {
+		padding: 0.75em 0;
+		margin-bottom: 20px;
+	}
+
+	table.soldier-list-table thead tr {
+		text-align: center;
+	}
+
+	table.soldier-list-table th {
+		display: block;
+		padding: 0.25em 0.5em;
+	}
+
+	table.soldier-list-table td {
+		padding: 0.25em 0.5em 0.25em 6.5em;
+		position: relative;
+	}
+
+	td.flag {
+		border: 0;
+	}
+
+	table.soldier-list-table tr td {
+		border-bottom: 1px solid #333333;
+		min-height: 2em;
+	}
+
+	table.soldier-list-table td:before {
+		content: attr(data-label);
+		left: 0.5em;
+		position: absolute;
+		top: 0.125em;
+		width: 100%;
+	}
+
+	tr.soldier-list-row td,
+	tr.soldier-list-footer td {
+		border: 0;
+	}
+
+	table.soldier-list-table tr td.eas {
+		border: 0;
+	}
+
+	td.flag {
+		width: 100%
+	}
+	td.flag img {
+		height: 40px;
+		width: auto;
+	}
+
+	td.class img,
+	td.rank img {
+		width: 35px
+	}
+
+	td.class {
+		width: 100%;
+	}
+}
+
+div.soldier-list-head,
+.mission-list-head,
+.soldier-mission-list,
+.mission-soldier-list-head,
+.mission-alien-list-head,
+.covert-list-head,
+.vip-list-head,
+.research-list-head,
+.chain-list-head,
+.stats-head {
+	font-family: Montserrat, Ubuntu, sans-serif;
+	font-size: 1.7em;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+div.mocx-list div.head-content {
+	background: #333333;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #e0e0e0;
+}
+
+/*div.soldier-list-row {
+	margin: 5px 0;
+	border-radius: 5px;
+	border: 1px solid #aaaaaa;
+} */
+
+div.mocx-list div.list-row-content {
+	margin: auto;
+	text-align: center;
+}
+
+/* div.list-row-content.flag img,
+div.list-row-footer.flag img {
+	width: 100%;
+} */
+
+div.mocx-list div.list-row-content.class img,
+div.mocx-list div.list-row-content.rank img {
+	max-width: 50%;
+}
+
+div.mocx-list div.list-row-content.name,
+div.mocx-list div.list-row-footer.name {
+	text-align: left;
+}
+
+div.mocx-list div.list-row-content {
+	padding: 10px;
+	margin: initial;
+}
+
+div.mocx-list div.list-row-content.class {
+	text-align: left;
+}
+/*
+div.soldier-list-header-row > div.row,
+div.soldier-list-row > div.row,
+div.soldier-list-footer > div.row {
+	margin: 0;
+}
+
+div.soldier-list-row.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+}
+
+div.soldier-list-row.alert-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+}
+
+div.soldier-list {
+	display: grid;
+	grid-template-columns: 0.8fr 0.7fr 0.8fr 3fr 1fr 1fr 1fr 0.7fr 0.7fr;
+} */
+
+div.mocx-list {
+	display: grid;
+	grid-template-columns: 1fr 0.8fr 0.8fr 0.6fr 0.4fr 0.4fr 0.5fr;
+}
+
+div.bg-chosen-mission {
+	background-color: #f0cccc;
+}
+
+div.big-ruler-mission {
+	background-color: #ccccf0;
+}
+
+/* Soldier Page */
+.soldier-name {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 1.7em;
+	padding: 10px 20px;
+}
+
+.soldier-headshot-card img {
+	border: 1px solid #333333;
+	object-fit: cover;
+	max-height: 625px;
+	max-width: 525px;
+}
+
+.soldier-country-card,
+.soldier-stats-card {
+	margin-top: 20px;
+}
+
+.country-name,
+.rank-icon span,
+.class-icon span,
+.bond-icon span {
+	padding-left: 10px;
+	font-size: 1.2em;
+}
+
+.mission-row .rank-icon span {
+	font-size: 1em;
+	padding-left: 0;
+}
+
+li.rank-icon,
+li.class-icon,
+li.bond-icon {
+	line-height: 50px;
+	font-size: 1.4em;
+}
+
+div.stat-icon {
+	background-repeat: no-repeat;
+	background-position-y: center;
+	line-height: 40px;
+	padding: 5px 10px 5px 50px;
+	font-size: 1.2em;
+	background-size: 30px 30px;
+}
+
+div.skill-icon {
+	font-size: 1.2em;
+}
+
+div.skill-icon span.card-text {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+div.skill-icon.shadow {
+	box-shadow: none !important;
+}
+
+span.rank-short {
+	line-height: 48px;
+}
+
+div.row.mission-row-head {
+	background-color: #333333;
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+div.rank-head {
+	padding-right: 0;
+}
+
+div.row.mission-head {
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+div.row.mission-row {
+	background-color: #ffffff;
+	padding: 5px;
+	border: 1px solid #333333;
+	margin-bottom: 8px;
+	border-radius: 5px;
+}
+
+div.class-covert {
+	line-height: 48px;
+}
+
+li.skill-icon {
+	font-size: 1.2em;
+	width: 25%;
+	background-size: 40px 40px;
+	background-position-x: 10px;
+}
+
+.rank-rookie {
+	background-image: url("../img/rank/rookie.png");
+}
+
+.rank-squaddie {
+	background-image: url("../img/rank/squaddie.png");
+}
+
+.rank-corporal {
+	background-image: url("../img/rank/corporal.png");
+}
+
+.rank-sergeant {
+	background-image: url("../img/rank/sergeant.png");
+}
+
+.rank-lieutenant {
+	background-image: url("../img/rank/lieutenant.png");
+}
+
+.rank-captain {
+	background-image: url("../img/rank/captain.png");
+}
+
+.rank-major {
+	background-image: url("../img/rank/major.png");
+}
+
+.rank-colonel {
+	background-image: url("../img/rank/colonel.png");
+}
+
+.rank-squire {
+	background-image: url("../img/rank/squire.png");
+}
+
+.rank-aspirant {
+	background-image: url("../img/rank/aspirant.png");
+}
+
+.rank-knight {
+	background-image: url("../img/rank/knight.png");
+}
+
+.rank-cavalier {
+	background-image: url("../img/rank/cavalier.png");
+}
+
+.rank-vanguard {
+	background-image: url("../img/rank/vanguard.png");
+}
+
+.rank-paladin {
+	background-image: url("../img/rank/paladin.png");
+}
+
+.rank-champion {
+	background-image: url("../img/rank/champion.png");
+}
+
+li.class-rookie {
+	background-image: url("../img/class/rookie.png");
+}
+
+li.class-field-medic {
+	background-image: url("../img/class/field-medic.png");
+}
+
+li.class-assault-infantry {
+	background-image: url("../img/class/assault-infantry.png");
+}
+
+li.class-marine {
+	background-image: url("../img/class/marine.png");
+}
+
+li.class-marksman {
+	background-image: url("../img/class/marksman.png");
+}
+
+li.class-sapper {
+	background-image: url("../img/class/sapper.png");
+}
+
+li.class-tech-specialist {
+	background-image: url("../img/class/tech-specialist.png");
+}
+
+li.class-skirmisher {
+	background-image: url("../img/class/skirmishers.png");
+}
+
+li.class-templar {
+	background-image: url("../img/class/templars.png");
+}
+
+li.class-reaper {
+	background-image: url("../img/class/reaper.png");
+}
+
+li.class-spark {
+	background-image: url("../img/class/spark.png");
+}
+
+li.bond-one {
+	background-image: url("../img/icons/bonds/bond1.png");
+}
+
+li.bond-two {
+	background-image: url("../img/icons/bonds/bond2.png");
+}
+
+li.bond-three {
+	background-image: url("../img/icons/bonds/bond3.png");
+}
+
+div.stat-aim {
+	background-image: url('../img/icons/stats/aim.png');
+}
+
+div.stat-health {
+	background-image: url('../img/icons/stats/health.png');
+}
+
+div.stat-movement {
+	background-image: url('../img/icons/stats/mobility.png');
+}
+
+div.stat-will {
+	background-image: url('../img/icons/stats/will.png');
+}
+
+div.stat-hack {
+	background-image: url('../img/icons/stats/hack.png');
+}
+
+div.stat-dodge {
+	background-image: url('../img/icons/stats/dodge.png')
+}
+
+div.stat-psi {
+	background-image: url('../img/icons/stats/psi.png');
+}
+
+div.stat-intelligence {
+	background-image: url('../img/icons/stats/intelligence.png');
+}
+
+div.soldier-page-total-stats {
+	font-size: 1.1em;
+	padding: 8px 10px 0;
+}
+
+div.skills-header {
+	font-size: 1.4em;
+	font-weight: bold;
+	background: #55aaaa;
+	color: #ffffff;
+}
+
+/* div.stat-icon.stat-intelligence {
+	padding-left: 0;
+	padding-top: 40px;
+	background-position-y: 10px;
+}
+
+OLD SOLDIER PAGE STYLES START HERE
+
+div.soldier-killed {
+	font-size: 4em;
+	color: #cc0000;
+	background-image: url('../img/icons/killed.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 80%;
+	padding-left: 80px;
+	margin-bottom: 20px;
+} */
+
+/* Mission List Page */
+div.mission-box-container,
+div.covert-box-container,
+div.research-box-container {
+	margin-bottom: 30px;
+}
+
+div.mission-box {
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #666666;
+	box-shadow: 0 0 4px #666666;
+}
+
+div.card.mission-box {
+	border-radius: 0.25rem; /* don't need this if deleting above styles */
+	box-shadow: none;
+}
+
+div.mission-box.mission-completed {
+	border: 1px solid #28a745;
+}
+
+div.mission-box.mission-completed img {
+	border-right: 1px solid #28a745;
+	border-left: 1px solid #28a745;
+}
+
+div.mission-box.mission-completed div.card-header {
+	background: url('../img/icons/green-check.png') no-repeat center right 5px;
+	background-size: 32px 32px;
+	padding-right: 50px;
+	display: block;
+}
+
+div.mission-box.mission-failed {
+	border: 1px solid #dc3545;
+}
+
+div.mission-box.mission-failed img {
+	border-right: 1px solid #dc3545;
+	border-left: 1px solid #dc3545;
+}
+
+div.mission-box.mission-failed div.card-header {
+	background: url('../img/icons/red-x.png') no-repeat center right 5px;
+	background-size: 32px 32px;
+	padding-right: 50px;
+	display: block;
+}
+
+div.mission-info {
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+}
+
+div.operation-name {
+	/* font-size: 1.3em; */
+	font-weight: bold;
+	color: #333333;
+}
+
+div.card.mission-box div.card-header {
+	font-size: 1.3em;
+}
+
+div.mission-date {
+	color: #000000;
+	font-weight: bold;
+}
+
+div.mission-objective {
+	padding: 10px;
+	color: #000000;
+	border-bottom: 1px solid #666666;
+}
+
+div.mission-location,
+div.mission-sitrep,
+div.mission-reward,
+div.covert-mission,
+div.covert-operatives,
+div.mission-darkevent {
+	margin-bottom: 10px;
+}
+
+/* Covert List Page */
+div.covert-faction {
+	padding: 10px;
+	color: #000000;
+	height: 70px;
+	border-radius: 10px 10px 0 0;
+}
+
+div.covert-reapers {
+	border: 1px solid #ffc107;
+}
+div.covert-skirmishers {
+	border: 1px solid #dc3545;
+}
+
+div.covert-templars {
+	border: 1px solid #6035dc;
+}
+
+div.covert-skirmishers div.card-header {
+	background: #f8d7da url('../img/icons/classes/skirmisher.png') no-repeat center right 5%;
+}
+
+div.covert-reapers div.card-header {
+	background: #fff3cd url('../img/icons/classes/reaper.png') no-repeat center right 5%;
+}
+
+div.covert-templars div.card-header {
+	background: #f5daf7 url('../img/icons/classes/templar.png') no-repeat center right 5%;
+}
+
+div.covert-box div.card-header {
+	display: flex;
+	font-size: 1.3em;
+	background-size: 48px 48px;
+	padding-right: 64px;
+	min-height: 68px;
+	align-items: center;
+	background-position-y: 10px;
+	font-weight: bold;
+}
+
+div.chain-box {
+	margin-bottom: 30px;
+}
+
+button.accordion-button {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+	color: inherit;
+	background-color: inherit;
+	box-shadow: none;
+}
+
+div.chain-box > div.card-header {
+	display: flex;
+	font-size: 1.3em;
+	min-height: 68px;
+	align-items: center;
+	font-weight: bold;
+}
+
+li.detail-list {
+	display: flex;
+    align-items: center;
+}
+
+li.detail-list i {
+	padding-right: 10px;
+}
+
+div.chain-covert-box-container,
+div.chain-mission-box-container {
+	padding: 30px;
+}
+
+div.chain-next-arrow {
+	padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.req-soldier {
+	background: url('../img/icons/classes/xcom.png') no-repeat center left 10px;
+}
+
+.req-skirmisher {
+	background: url('../img/icons/classes/skirmisher.png') no-repeat center left 10px;
+}
+
+.req-templar {
+	background: url('../img/icons/classes/templar.png') no-repeat center left 10px;
+}
+
+.req-reaper {
+	background: url('../img/icons/classes/reaper.png') no-repeat center left 10px;
+}
+
+.req-squaddie {
+	background: url('../img/icons/ranks/squaddie.png') no-repeat center left 10px;
+}
+
+.req-corporal {
+	background: url('../img/icons/ranks/corporal.png') no-repeat center left 10px;
+}
+
+.req-sergeant {
+	background: url('../img/icons/ranks/sergeant.png') no-repeat center left 10px;
+}
+
+.req-lieutenant {
+	background: url('../img/icons/ranks/lieutenant.png') no-repeat center left 10px;
+}
+
+.req-captain {
+	background: url('../img/icons/ranks/captain.png') no-repeat center left 10px;
+}
+
+.req-major {
+	background: url('../img/icons/ranks/major.png') no-repeat center left 10px;
+}
+
+.req-colonel {
+	background: url('../img/icons/ranks/colonel.png') no-repeat center left 10px;
+}
+
+.req-scientist {
+	background: url('../img/icons/scientist.png') no-repeat center left 10px;
+}
+
+.req-engineer {
+	background: url('../img/icons/engineer.png') no-repeat center left 10px;
+}
+
+.req-supplies {
+	background: url('../img/icons/supplies.png') no-repeat center left 10px;
+}
+
+.req-intel {
+	background: url('../img/icons/intel.png') no-repeat center left 10px;
+}
+
+.req-alien-alloys {
+	background: url('../img/icons/alloys.png') no-repeat center left 10px;
+}
+
+.req-elerium-crystals {
+	background: url('../img/icons/elerium.png') no-repeat center left 10px;
+}
+
+div.covert-box li.covert-operative {
+	padding-left: 48px;
+	background-size: 32px 32px;
+	display: block;
+}
+
+li.list-group-item.covert-location {
+	background: url('../img/icons/globe.png') no-repeat center left 10px;
+	background-size: 32px 32px;
+	padding-left: 48px;
+	display: block;
+}
+
+li.list-group-item.covert-date {
+	background: url('../img/icons/date-icon.png') no-repeat center left 10px;
+	background-size: 32px 32px;
+	padding-left: 48px;
+	display: block;
+}
+
+li.op-wounded {
+	background-color: #fff3cd;
+}
+
+li.op-captured {
+	background-color: #f5c6cb;
+}
+
+li.op-killed {
+	background-color: #f5c6cb;
+}
+
+div.covert-faction-info {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+div.covert-faction img {
+	height: 50px;
+	float: right;
+}
+
+div.covert-info {
+	padding: 10px;
+}
+
+div.hidden {
+	display: none;
+}
+
+/* Gear List Page & VIP List Page */
+.vip-group {
+	border: 1px solid #666666;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.vip-title {
+	padding: 5px 20px;
+	border-radius: 10px 10px 0 0;
+	font-size: 1.3em;
+	min-height: 3em;
+	font-weight: bold;
+	border-bottom: 1px solid #333;
+	color: #eee;
+	font-family: "Ubuntu", sans-serif;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+	text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+	position: relative;
+}
+
+.vip-title span {
+	position: absolute;
+	bottom: 5px;
+}
+
+.vip-row:nth-child(even) {
+	background: #fff;
+}
+
+.vip-row:nth-child(odd) {
+	background: #e6e6e6;
+}
+
+.vip-row:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+.vip-name,
+.vip-name-header {
+	width: 50%;
+	display: inline-block;
+	padding: 10px 0 10px 10px;
+}
+
+.vip-date,
+.vip-date-header {
+	width: 48%;
+	border-left: 1px solid #333333;
+	display: inline-block;
+	padding: 10px 0 10px 10px;
+}
+
+.vip-name-header,
+.vip-date-header {
+	font-weight: bold;
+	background: #fff;
+}
+
+.gear-number img {
+	height: 24px;
+}
+
+.vip-title.scientist {
+	background-image: url("../img/vips/scientists.jpg");
+}
+
+.vip-title.engineer {
+	background-image: url("../img/vips/engineers.jpg");
+}
+
+.vip-title.dark-vip {
+	background-image: url("../img/vips/darkvip.jpg");
+}
+
+/* Begin New Styles Below This Line */
+div.card.blank {
+	background: transparent;
+	border: 1px solid transparent;
+}
+
+div.card.mission-top img,
+div.card.soldier-top img {
+	width: 100%;
+}
+
+div.card-body.mission-stats {
+	font-size: 1.5rem;
+}
+
+div.card-body.mission-stats div.row {
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	padding: 10px 0;
+}
+
+div.card-body.mission-stats div.row:last-child,
+div.card-body.mission-stats div.row.rewards {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+div.card-body.mission-stats div.row:first-child {
+	padding-top: 0;
+}
+
+div.card-header h2,
+div.card-header h5,
+div.card-header h6 {
+	margin-bottom: 0;
+}
+
+div.country-flag img {
+	border: 1px solid #333333;
+}
+
+div.row.soldier-info div {
+	padding: 0 5px;
+}
+
+div.row.soldier-info div.icon {
+	padding: 0;
+}
+
+div.row.soldier-info div img {
+	width: 100%;
+}
+
+.badge {
+	margin-right: 10px;
+	padding: 0.35em 0.35em;
+}
+
+.badge-purple {
+	color: #ffffff;
+	background-color: #7c17b8;
+}
+
+.text-psi {
+	color: #7c17b8;
+}
+
+li.mission-result {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+div.mission-information {
+	font-size: 1.3em;
+	font-weight: bold;
+	border-color: #198754;
+}
+
+.mi-list {
+	display: flex;
+	align-items: center;
+}
+
+.mi-list i {
+	width: 40px;
+	margin-right: 20px;
+}
+
+.assault-mission,
+.infiltration-mission {
+	font-weight: bold;
+}
+
+div.progress.infil-progress {
+	width: 100%;
+	height: 2rem;
+}
+
+.mission-objective i {
+	color: #59359a;
+}
+
+.mission-location i {
+	color: #479f76;
+}
+
+.mission-sitrep i {
+	color: #984c0c;
+}
+
+.episodes i {
+	color: #FF0000;
+}
+
+div.mission-details {
+	font-size: 1.3em;
+	font-weight: bold;
+	border-color: #0dcaf0;
+}
+
+div.details-title,
+div.details-info {
+	border-bottom: 1px solid #999999;
+	font-size: 1.1em;
+}
+
+div.details-title {
+	font-weight: bold;
+}
+
+div.soldier-mission-name {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	padding: 10px 10px 10px 20px;
+}
+
+div.soldier-mission-status {
+	border-left: 1px solid #ced4da;
+	align-items: center;
+	display: flex;
+	background: #e9ecef;
+	justify-content: flex-end;
+}
+
+div.soldier-mission-head {
+	padding: 0;
+	margin: 0;
+}
+
+div.soldier-info-text {
+	align-items: center;
+}
+
+div.mission-soldier-picture {
+	align-self: flex-start;
+}
+
+div.big-alien {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+div.alien-name {
+	font-weight: bold;
+}
+
+div.alien-result {
+	border-left: 1px solid #ced4da;
+	background: #e9ecef;
+}
+
+div.alien-name-totals {
+	background: #a3cfbb;
+}
+
+div.alien-totals {
+	border-left: 1px solid #146c43;
+	font-weight: bold;
+	background: #75b798;
+}
+
+div.card-header i.fa,
+div.card-header i.far,
+div.card-header i.fas {
+	margin-left: 10px;
+}
+
+/* Homepage Styles */
+div.homepage-box {
+	margin-bottom: 20px;
+}
+
+div.homepage-box div.card-header {
+	font-weight: bold;
+}
+
+div.homepage-info-box {
+	font-size: 1.1rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+div.homepage-info-box.card-body {
+	padding: 1rem;
+}
+
+div.homepage-mission-name,
+div.homepage-mission-result {
+	padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+div.homepage-mission-date,
+div.homepage-mission-url,
+div.homepage-mission-objective,
+div.homepage-mission-type,
+div.homepage-mission-result,
+div.homepage-mission-location {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+div.homepage-mission-date i,
+div.homepage-mission-url i,
+div.homepage-mission-result i,
+div.homepage-mission-type i,
+div.homepage-mission-location i {
+	padding-right: 10px;
+	font-size: 2rem;
+	width: 50px;
+}
+
+div.homepage-mission-name {
+	font-family: Montserrat, Ubuntu, sans-serif;
+}
+
+div.homepage-mission-url i {
+	color: #ff0000;
+}
+
+div.homepage-mission-objective i {
+	padding: 0 10px;
+}
+
+div.homepage-mission-type {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+div.avatar-boxes {
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+div.avatar-boxes i {
+	padding: 0 4px;
+	color: #ff0000;
+}
+
+div.homepage-chain-header,
+div.homepage-event-header {
+	margin-bottom: 20px;
+	font-family: Montserrat, Ubuntu, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+div.homepage-chain-header .card-header {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+div.chain-carousel {
+	margin-bottom: 20px;
+}
+
+div.card-carousel .card-header {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+div.card-carousel .card-body {
+	padding: 20px 15%;
+	min-height: 200px
+}
+
+div.card-carousel .card-title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-family: Montserrat, Ubuntu, sans-serif;
+}
+
+div.homepage-step-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+div.homepage-step-objective {
+	/* empty */
+}
+
+div.homepage-step-date,
+div.homepage-step-location {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+div.homepage-step-date i,
+div.homepage-step-location i {
+	padding-right: 10px;
+}
+
+div.card-carousel .card-footer {
+	padding: calc(14px + 1rem) 0;
+}
+
+div.events-box {
+	padding: 10px 0 0 10px;
+}
+
+div.row.mission-row div.rank-icon {
+	padding-left: 0;
+	height: 48px;
+}
+
+div.row.mission-row span.rank-short {
+	display: none;
+}
+	
+/* div.row.mission-row > div {
+	padding: 5px 0;
+} */
+	
+span.soldier-mission-type {
+	display: none;
+}
+	
+span.soldier-mission-name:after,
+span.soldier-cover-start-date:after	{
+	content: " - ";
+	padding-right: 0.25em;
+}
+
+/* Statistics Page */
+div.stat-summary {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+div.stat-summary-body {
+	font-size: 1.1em;
+}
+
+div.stats-header {
+	padding: 8px 16px;
+}
+
+@media (min-width: 576px) {
+	div.homepage-info-box {
+		font-size: 1rem;
+	}
+
+	div.homepage-info-box.card-body {
+		padding: 1rem;
+	}
+	
+	div.avatar-boxes {
+		font-size: 1.1rem;
+	}
+	
+	div.homepage-mission-name,
+	div.homepage-mission-result {
+		font-size: 1.2em;
+	}
+	
+	div.homepage-mission-date,
+	div.homepage-mission-url,
+	div.homepage-mission-objective,
+	div.homepage-mission-type {
+		padding: 10px;
+		font-size: 0.8rem
+	}
+	
+	div.homepage-mission-date i,
+	div.homepage-mission-url i {
+		font-size: 1.5rem;
+	}
+	
+	div.homepage-mission-type {
+		font-size: 1em;
+	}
+	
+	div.homepage-covert-skirmishers {
+		background: url('../img/icons/classes/skirmisher.png') no-repeat bottom 10px right;
+		background-size: 55px 55px;
+	}
+
+	div.homepage-covert-templars {
+		background: url('../img/icons/classes/templar.png') no-repeat bottom 10px right;
+		background-size: 55px 55px;
+	}
+
+	div.homepage-covert-reaper {
+		background: url('../img/icons/classes/templar.png') no-repeat bottom 10px right;
+		background-size: 55px 55px;
+	}
+}
+
+@media (min-width: 768px) {
+	div.homepage-info-box {
+		font-size: 1.2rem;
+	}
+	
+	div.avatar-boxes {
+		font-size: 1.6rem;
+	}
+	
+	div.homepage-mission-name,
+	div.homepage-mission-result {
+		font-size: 1.3em;
+	}
+	
+	div.homepage-mission-date,
+	div.homepage-mission-url,
+	div.homepage-mission-objective,
+	div.homepage-mission-type {
+		font-size: 1rem
+	}
+	
+	div.homepage-mission-date i,
+	div.homepage-mission-url i {
+		font-size: 1.5rem;
+	}
+	
+	div.homepage-mission-type {
+		font-size: 1.1em;
+	}
+	
+	div.homepage-mission-name {
+		border-radius: 5px 0 0 0;
+	}
+
+	div.homepage-mission-result {
+		border-radius: 0 5px 0 0;
+	}
+	
+	span.soldier-cover-start-date:after	{
+		content: "";
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	div.homepage-info-box {
+		font-size: 1rem;
+	}
+
+	div.homepage-info-box.card-body {
+		padding: 1rem 0.75rem;
+	}
+	
+	div.avatar-boxes {
+		font-size: 1.15rem;
+	}
+	
+	div.homepage-mission-name,
+	div.homepage-mission-result {
+		font-size: 1.1em;
+	}
+	
+	div.homepage-mission-date,
+	div.homepage-mission-url,
+	div.homepage-mission-objective,
+	div.homepage-mission-type {
+		padding: 10px 8px;
+		font-size: 0.7rem
+	}
+	
+	div.homepage-mission-date i,
+	div.homepage-mission-url i {
+		font-size: 1.5rem;
+	}
+	
+	div.homepage-mission-type {
+		font-size: 0.9em;
+	}
+	
+	/* div.row.mission-row > div {
+		padding: 0;
+	} */
+	
+	span.soldier-mission-aliens,
+	span.soldier-mission-lost,
+	span.soldier-mission-name,
+	span.soldier-mission-date,
+	span.soldier-mission-type,
+	span.soldier-mission-objective,
+	span.soldier-mission-shots,
+	span.soldier-mission-shots-pct,
+	span.soldier-mission-overwatch,
+	span.soldier-mission-overwatch-pct,
+	span.soldier-covert-start-date,
+	span.soldier-covert-end-date,
+	span.soldier-covert-action,
+	span.soldier-covert-action-type 
+	{
+		display: block;
+	}
+	
+	span.soldier-mission-name:after {
+		content: "";
+		padding-right: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	div.homepage-info-box {
+		font-size: 1.15rem;
+	}
+
+	div.homepage-info-box.card-body {
+		padding: 1rem;
+	}
+	
+	div.avatar-boxes {
+		font-size: 1.6rem;
+	}
+	
+	div.homepage-mission-name {
+		font-size: 1.2em;
+	}
+	
+	div.homepage-mission-date,
+	div.homepage-mission-url,
+	div.homepage-mission-objective,
+	div.homepage-mission-type {
+		font-size: 0.9rem
+	}
+	
+	div.homepage-mission-date i,
+	div.homepage-mission-url i {
+		font-size: 1.75rem;
+	}
+	
+	div.homepage-mission-type {
+		font-size: 1em;
+	}
+	
+	div.row.mission-row div.rank-icon {
+		padding-left: 50px;
+		line-height: 48px;
+		background-position-y: 50%;
+		background-size: 40px 40px;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+	}
+
+	div.row.mission-row div.class-icon img {
+		max-height: 37px;
+	}
+	
+	div.row.mission-row span.rank-short {
+		display: inline;
+	}
+	
+	div.rank-head {
+		padding-right: 50px;
+	}
+
+}
+
+@media (min-width: 1400px) {
+	div.homepage-info-box {
+		font-size: 1rem;
+	}
+	
+	div.avatar-boxes {
+		font-size: 1.5rem;
+	}
+
+	div.homepage-mission-picture img {
+		width: 100%;
+	}
+	
+	div.homepage-mission-name {
+		font-size: 1.6em;
+	}
+	
+	div.homepage-mission-date,
+	div.homepage-mission-url,
+	div.homepage-mission-objective,
+	div.homepage-mission-type,
+	div.homepage-mission-location {
+		font-size: 1rem;
+		padding: 9px 10px;
+	}
+	
+	div.homepage-mission-date i,
+	div.homepage-mission-url i {
+		font-size: 2rem;
+	}
+	
+	div.homepage-mission-type {
+		font-size: 1.1em;
+	}
+}
+
+/* Responsive Cards CSS Fix */
+/* See: https://github.com/twbs/bootstrap/issues/20321#issuecomment-309210866 */
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
+}

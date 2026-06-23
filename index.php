@@ -1,25 +1,29 @@
-<?php include_once '/home/joshch9/project/frontInclude.php' ?>
+<?php
+include_once __DIR__.'/../project/frontInclude.php';
+
+use XCOMDatabank\Front\Homepage;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php include_once '/home/joshch9/xcom-databank/php/ga.php' ?>
-		<?php include_once '/home/joshch9/xcom-databank/php/header-include.php' ?>
-		<!-- <meta http-equiv="refresh" content="0;url=http://xcom-databank/wotc2/" /> -->
+		<?php include_once __DIR__.'/php/ga.php' ?>
+		<?php include_once __DIR__.'/php/header-include.php' ?>
 	</head>
 	<body>
 		<div id="main">
 			<div id="page-top">
-				<?php include_once '/home/joshch9/xcom-databank/php/page-head.php' ?>
-				<?php include_once '/home/joshch9/xcom-databank/php/page-nav.php' ?>
+				<?php include_once __DIR__.'/php/page-head.php' ?>
+				<?php include_once __DIR__.'/php/page-nav.php' ?>
 			</div>
 			<div class="container">
-				<?php getEpisode("id", -1); ?>
+				<?php
+                $getHomepage = New Homepage;
+                $getHomepage->getHomepage();
+                ?>
 			</div>
 		</div>
-	<?php include_once '/home/joshch9/xcom-databank/php/page-footer.php' ?>
-	<?php include_once '/home/joshch9/xcom-databank/php/scripts-include.php' ?>
-	<script src="/js/soldier-table-sort.js"></script>
-	<script src="/js/alien-table-sort.js"></script> 
+	<?php include_once __DIR__.'/php/page-footer.php' ?>
+	<?php include_once __DIR__.'/php/scripts-include.php' ?>
 	</body>
 </html>
